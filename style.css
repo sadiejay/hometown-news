@@ -521,9 +521,11 @@ body {
   }
 
   .articles {
+    grid-column: 2 / 11;
   }
 
   .sidebar {
+    grid-column: 12 / -2;
   }
 
   .footer-links {
