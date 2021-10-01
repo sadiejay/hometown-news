@@ -399,15 +399,19 @@ body {
 /* HOME LAYOUT */
 
 .home {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
 }
 
 .menu {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  grid-column: 1 / -1;
 }
 
 .articles {
+  grid-column: 2 / -2;
 }
 
 .article {
@@ -428,6 +432,7 @@ body {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-gap: 16px;
+  grid-column: 2 / -2;
 }
 
 .headliner-one__img,
@@ -448,6 +453,8 @@ body {
 }
 
 .sidebar {
+  grid-column: 2 / -2;
+  align-self: start;
 }
 
 .top__item {
@@ -456,9 +463,11 @@ body {
 }
 
 .callout {
+  grid-column: 2 / -2;
 }
 
 .footer {
+  grid-column: 1 / -1;
 }
 
 .callout-item {
